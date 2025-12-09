@@ -116,6 +116,7 @@ aside header{
     gap: 15px;
     padding: 10px 15px 10px 15px;
     transition: background-color, border .2s;
+    border: 3px solid transparent;
 }
 .user-chat img{
     width: 60px;
