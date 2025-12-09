@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* variables */
@@ -15,4 +16,126 @@
   --green-400: #138b80;
   --green-300: #2dca7a;
   --green-100: #dcf8c6;
+
+  --primary-font: "roboto", "sans-serif";
 }
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app{
+    width: 80%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px 100px -30px var(--grey-900);
+
+}
+
+aside{
+    background-color:var(--grey-900);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+aside header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--grey-900);
+    box-shadow: 1px -30px 30px 1px whitesmoke;
+
+}
+.image-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.title-profile{
+    font-size: 1em;
+}
+
+.image-name img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.childrem svg{
+    width: 20px;
+    /* color al svg: */
+    stroke: #6f767b; 
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.actions button{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+.input-search form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-search form input{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    margin: 10px;
+    background-color: var(--grey-700);
+    color: whitesmoke;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+.container-chats ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.user-chat{
+    display: flex;
+    gap: 15px;
+    padding: 10px 15px 10px 15px;
+    transition: background-color, border .2s;
+}
+.user-chat img{
+    width: 60px;
+    border-radius: 50%;
+}
+.user-chat:hover{
+    border-left:  3px solid var(--green-300);
+    background-color: #101c1c;
+}
+.chat-title{
+    font-size: 15px;
+}
+
+.chat-description{
+    color: #6f767b;
+}
+.info-chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
