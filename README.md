@@ -1,4 +1,7 @@
 # Proyecto base para la comision 999200928
 ## Maquetacion de proyecto web
 
-aqui encontraras el codigo base referente al proyecto final
+Aqui encontraras el codigo base referente a mi proyecto final para Diplomatura web fullStack de la UTN.
+
+- En esta primera entrega he realizado un panel visual de lo que proximanete sera una app web de chats funcional, esta adaptado a distintos dispositivos. 
+
