@@ -39,6 +39,9 @@ body{
     box-shadow: 0px 0px 100px -50px var(--grey-900);
 
 }
+.flecha{
+    display: none;
+}
 
 aside{
     background-color:var(--grey-900);
@@ -280,7 +283,59 @@ footer form textarea{
     }
     .app{
         grid-template-columns: 1fr;
-        grid-template-rows: 50%;
+        grid-template-rows: 100%;
         border-radius: 0px;
+    }
+    .flecha{
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        position: fixed;
+        left: -4%;
+        top: 50%;
+        stroke: var(--green-400); 
+        fill: var(--green-400);
+        transition: transform ease .2s, left ease .3s;
+        animation: pulso 1s ease-in-out infinite;
+        padding-left: 15px;
+        overflow: hidden;
+    }
+    .flecha svg {
+        width: 50px;
+    }
+
+    @keyframes pulso {
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+        }
+        100%{
+           transform: scale(1);
+        }
+    }
+    aside{
+        position: fixed;
+        width: 80%;
+        height: 100dvh;
+        left: -89%;
+        padding-right: 50px;
+        transition: left .3s, padding ease .0s, background-color ease .4s;
+        background-color: transparent;
+    }
+    aside:hover{
+        left: 0%;
+        padding: 0;
+        background-color: var(--grey-900);
+
+    }
+    
+    aside:hover .flecha {
+        left: 80%;
+        padding-left: 0;
+    }
+    aside:hover .flecha svg{
+        transform: rotate(180deg);
     }
 }
