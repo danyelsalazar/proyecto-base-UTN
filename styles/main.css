@@ -280,6 +280,7 @@ footer form textarea{
 @media (max-width: 747px){
     body{
         padding: 0;
+        background-color: var(--grey-900);
     }
     .app{
         grid-template-columns: 1fr;
